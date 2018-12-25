@@ -13,8 +13,7 @@
 
         <android.support.constraint.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
             <TextView
                 android:id="@+id/tv_greeting"
@@ -53,11 +52,11 @@
                 android:layout_marginEnd="8dp"
                 android:background="#0000000f"
                 android:clickable="true"
+                android:contentDescription="@string/action_settings"
                 android:focusable="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@android:drawable/ic_menu_manage"
-                android:contentDescription="@string/action_settings" />
+                app:srcCompat="@android:drawable/ic_menu_manage" />
 
         </android.support.constraint.ConstraintLayout>
 
@@ -80,13 +79,21 @@
         </android.support.design.widget.AppBarLayout>
 
         <android.support.v4.view.ViewPager
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
             android:id="@+id/view_pager"
-            />
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
 
 
     </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/container_for_new_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+
+    </FrameLayout>
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/btn_add_remind"

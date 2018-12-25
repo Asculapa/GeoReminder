@@ -10,4 +10,7 @@
     <string name="current">Current</string>
     <string name="you_have_2_task_for_today">You have 2 task for today</string>
     <string name="good_afternoon_user">Good Afternoon, User</string>
+    <string name="add">add</string>
+    <string name="remind_text">Remind text</string>
+    <string name="description">Description</string>
 </resources>
