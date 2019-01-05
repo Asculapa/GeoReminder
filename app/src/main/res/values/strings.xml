@@ -13,4 +13,9 @@
     <string name="add">add</string>
     <string name="remind_text">Remind text</string>
     <string name="description">Description</string>
+    <string name="list_of_location">List of location</string>
+    <string name="select_location">Select location</string>
+    <string name="choose_variant">Choose variant</string>
+    <string name="developer_is_debil">Something wrong with developer(just stupid)</string>
+    <string name="empty">Empty</string>
 </resources>
