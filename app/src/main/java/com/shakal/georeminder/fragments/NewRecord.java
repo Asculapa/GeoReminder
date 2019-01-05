@@ -1,7 +1,6 @@
 package com.shakal.georeminder.fragments;
 
 import android.app.AlertDialog;
-import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -16,7 +15,6 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
-import android.widget.FrameLayout;
 import android.widget.Toast;
 
 import com.shakal.georeminder.R;
@@ -104,18 +102,17 @@ public class NewRecord extends Fragment {
     }
 
     private void listOfLocation(){
-        //TODO Написать реализацию класа ListOfLocation
         ListOfLocation listOfLocation = new ListOfLocation();
         listOfLocation.show(fragmentManager,null);
     }
 
     private void selectLocation(){
-        Location location = new Location();
+        Map map = new Map();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
         fragmentTransaction
                 .addToBackStack(null)
-                .replace(R.id.container_for_new_record,location)
+                .replace(R.id.container_for_new_record, map)
                 .commit();
     }
 }

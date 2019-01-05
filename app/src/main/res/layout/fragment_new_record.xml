@@ -3,10 +3,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="5dp"
     android:animateLayoutChanges="true"
-    android:background="#FFFFFFFF"
-    >
+    android:background="@drawable/background_new_record">
 
 
     <android.support.constraint.ConstraintLayout
@@ -21,11 +25,11 @@
             android:background="@android:color/transparent"
             android:ems="10"
             android:hint="@string/remind_text"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
             app:layout_constraintTop_toTopOf="parent"
-            tools:layout_editor_absoluteX="16dp"
             tools:ignore="MissingConstraints"
-            android:importantForAutofill="no"
+            tools:layout_editor_absoluteX="16dp"
             tools:targetApi="o" />
 
         <EditText
@@ -35,12 +39,12 @@
             android:background="@android:color/transparent"
             android:ems="10"
             android:hint="@string/description"
+            android:importantForAutofill="no"
             android:inputType="textPersonName"
             android:textSize="16sp"
             app:layout_constraintTop_toBottomOf="@+id/edt_name"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="16dp"
-            android:importantForAutofill="no"
             tools:targetApi="o" />
 
         <android.support.constraint.ConstraintLayout
@@ -57,11 +61,13 @@
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:background="@android:color/transparent"
+                android:clickable="true"
                 android:drawableStart="@drawable/location"
+                android:focusable="true"
                 android:padding="12dp"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="0dp"
-                tools:ignore="MissingConstraints" />
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="0dp" />
 
             <Button
                 android:id="@+id/btn_time"
@@ -69,7 +75,9 @@
                 android:layout_height="48dp"
                 android:layout_marginStart="16dp"
                 android:background="@android:color/transparent"
+                android:clickable="true"
                 android:drawableStart="@drawable/time"
+                android:focusable="true"
                 android:padding="12dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/btn_location"
@@ -85,6 +93,8 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/shape_button"
+                android:clickable="true"
+                android:focusable="true"
                 android:text="@string/add"
                 android:textColor="@color/black"
                 android:textSize="14sp"
